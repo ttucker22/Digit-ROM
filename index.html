@@ -57,6 +57,22 @@
             color: white;
             font-weight: bold;
         }
+        th.no-bg, td.no-bg {
+            background-color: transparent;
+            color: black;
+        }
+        th.joint-header {
+            background-color: #007BFF;
+            color: white;
+        }
+        th.joint-header-text {
+            color: white;
+        }
+        th.joint, th.ip, th.mp, th.cmc {
+            font-weight: normal;
+            background-color: transparent;
+            color: black;
+        }
         input[type="number"] {
             width: 80%;
             padding: 4px;
@@ -110,7 +126,7 @@
             <h3>Thumb</h3>
             <table>
                 <tr>
-                    <th>Joint</th>
+                    <th class="joint-header">Joint</th>
                     <th></th>
                     <th>Flexion</th>
                     <th>Extension</th>
@@ -118,7 +134,7 @@
                     <th>Imp%</th>
                 </tr>
                 <tr>
-                    <th rowspan="2">IP</th>
+                    <td class="joint">IP</td>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-ip-flexion"></td>
                     <td><input type="number" id="thumb-ip-extension"></td>
@@ -132,7 +148,7 @@
                     <td id="thumb-ip-ankylosis-imp">0</td>
                 </tr>
                 <tr>
-                    <th rowspan="2">MP</th>
+                    <td class="joint">MP</td>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-mp-flexion"></td>
                     <td><input type="number" id="thumb-mp-extension"></td>
@@ -146,14 +162,14 @@
                     <td id="thumb-mp-ankylosis-imp">0</td>
                 </tr>
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th colspan="2">Motion</th>
+                    <td class="no-bg"></td>
+                    <th>Motion</th>
+                    <th colspan="2"></th>
                     <th>Ankylosis</th>
                     <th>Imp%</th>
                 </tr>
                 <tr>
-                    <th rowspan="6">CMC</th>
+                    <td class="joint" rowspan="6">CMC</td>
                     <td rowspan="2">Radial Abduction</td>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-radial-abduction"></td>
@@ -339,7 +355,7 @@
                     <td class="PIPAnkylosisImpairment">0</td>
                 </tr>
                 <tr>
-                   <td>MP</td>
+                    <td>MP</td>
                     <td><input type="number" class="MPFlexion"></td>
                     <td><input type="number" class="MPExtension"></td>
                     <td><input type="number" class="MPAnkylosis"></td>
