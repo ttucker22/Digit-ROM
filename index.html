@@ -57,6 +57,10 @@
             color: white;
             font-weight: bold;
         }
+        th.no-bg {
+            background-color: transparent;
+            color: black;
+        }
         input[type="number"] {
             width: 80%;
             padding: 4px;
@@ -110,7 +114,7 @@
             <h3>Thumb</h3>
             <table>
                 <tr>
-                    <th>Joint</th>
+                    <th class="no-bg">Joint</th>
                     <th></th>
                     <th>Flexion</th>
                     <th>Extension</th>
@@ -118,7 +122,7 @@
                     <th>Imp%</th>
                 </tr>
                 <tr>
-                    <th rowspan="2">IP</th>
+                    <th class="no-bg" rowspan="2">IP</th>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-ip-flexion"></td>
                     <td><input type="number" id="thumb-ip-extension"></td>
@@ -132,7 +136,7 @@
                     <td id="thumb-ip-ankylosis-imp">0</td>
                 </tr>
                 <tr>
-                    <th rowspan="2">MP</th>
+                    <th class="no-bg" rowspan="2">MP</th>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-mp-flexion"></td>
                     <td><input type="number" id="thumb-mp-extension"></td>
@@ -146,14 +150,14 @@
                     <td id="thumb-mp-ankylosis-imp">0</td>
                 </tr>
                 <tr>
-                    <th></th>
+                    <th class="no-bg"></th>
                     <th></th>
                     <th colspan="2">Motion</th>
                     <th>Ankylosis</th>
                     <th>Imp%</th>
                 </tr>
                 <tr>
-                    <th rowspan="6">CMC</th>
+                    <th class="no-bg" rowspan="6">CMC</th>
                     <td rowspan="2">Radial Abduction</td>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-radial-abduction"></td>
@@ -340,8 +344,6 @@
                 </tr>
                 <tr>
                     <td>MP</td>
-                    <td><input type="number" class="MP
-<td>MP</td>
                     <td><input type="number" class="MPFlexion"></td>
                     <td><input type="number" class="MPExtension"></td>
                     <td><input type="number" class="MPAnkylosis"></td>
