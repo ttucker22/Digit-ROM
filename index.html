@@ -57,6 +57,11 @@
             color: white;
             font-weight: bold;
         }
+        td.joint {
+            background-color: #fff;
+            color: black;
+            font-weight: normal;
+        }
         input[type="number"] {
             width: 80%;
             padding: 4px;
@@ -118,7 +123,7 @@
                     <th>Imp%</th>
                 </tr>
                 <tr>
-                    <th rowspan="2">IP</th>
+                    <td class="joint" rowspan="2">IP</td>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-ip-flexion"></td>
                     <td><input type="number" id="thumb-ip-extension"></td>
@@ -132,7 +137,7 @@
                     <td id="thumb-ip-ankylosis-imp">0</td>
                 </tr>
                 <tr>
-                    <th rowspan="2">MP</th>
+                    <td class="joint" rowspan="2">MP</td>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-mp-flexion"></td>
                     <td><input type="number" id="thumb-mp-extension"></td>
@@ -146,14 +151,14 @@
                     <td id="thumb-mp-ankylosis-imp">0</td>
                 </tr>
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th colspan="2">Motion</th>
+                    <td class="joint"></td>
+                    <th>Motion</th>
+                    <th colspan="2"></th>
                     <th>Ankylosis</th>
                     <th>Imp%</th>
                 </tr>
                 <tr>
-                    <th rowspan="6">CMC</th>
+                    <td class="joint" rowspan="6">CMC</td>
                     <td rowspan="2">Radial Abduction</td>
                     <td>Angle°</td>
                     <td><input type="number" id="thumb-radial-abduction"></td>
@@ -340,8 +345,6 @@
                 </tr>
                 <tr>
                     <td>MP</td>
-                    <td><input type="number" class="MP
-<td>MP</td>
                     <td><input type="number" class="MPFlexion"></td>
                     <td><input type="number" class="MPExtension"></td>
                     <td><input type="number" class="MPAnkylosis"></td>
