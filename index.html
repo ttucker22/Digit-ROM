@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,19 @@
             padding: 20px;
             background-color: #f4f4f4;
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             text-align: center;
             color: #333;
         }
+
         h2 {
             font-size: 16px;
             color: #666;
             margin-top: -10px;
         }
+
         .calculator-container {
             display: flex;
             flex-wrap: wrap;
@@ -27,6 +32,7 @@
             gap: 20px;
             margin-top: 30px;
         }
+
         .card {
             background: #fff;
             border-radius: 8px;
@@ -36,33 +42,39 @@
             min-width: 600px;
             margin-bottom: 20px;
         }
+
         .card h3 {
             text-align: center;
             color: #007BFF;
             margin-top: 0;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 15px;
         }
-        th, td {
+
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: center;
             font-size: 14px;
         }
+
         th {
             background-color: #007BFF;
             color: white;
             font-weight: bold;
         }
+
         td.joint {
-            background-color: #fff;
-            color: black;
-            font-weight: normal;
+            background-color: #f0f0f0;
+            font-weight: bold;
         }
-        input[type="number"] {
+
+        td input[type="number"] {
             width: 80%;
             padding: 4px;
             border: 1px solid #ccc;
@@ -70,6 +82,7 @@
             font-size: 14px;
             text-align: center;
         }
+
         .cvc-result {
             text-align: center;
             margin-top: 15px;
@@ -77,12 +90,14 @@
             font-weight: bold;
             color: #007BFF;
         }
+
         .full-width {
             width: 100%;
             display: flex;
             justify-content: center;
             margin-top: 30px;
         }
+
         button {
             padding: 12px 24px;
             background: #007BFF;
@@ -93,9 +108,11 @@
             font-size: 18px;
             transition: background 0.3s ease;
         }
+
         button:hover {
             background: #0056b3;
         }
+
         #result {
             text-align: center;
             margin-top: 30px;
@@ -105,10 +122,11 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Five-Digit ROM Impairment Calculator</h1>
     <h2>Based on Figures 16-21, 16-23 & 16-25 on pages 461 - 464 of The AMA Guides 5th Edition</h2>
-    
+
     <div class="calculator-container">
         <!-- Thumb Calculator -->
         <div class="card" id="thumbCalculator">
@@ -152,7 +170,7 @@
                 </tr>
                 <tr>
                     <td class="joint"></td>
-                    <th>Motion</th>
+                    <td>Motion</td>
                     <th colspan="2"></th>
                     <th>Ankylosis</th>
                     <th>Imp%</th>
@@ -197,6 +215,7 @@
             </table>
             <div class="cvc-result" id="thumb-cvc-result"></div>
         </div>
+    </div>
 
         <!-- Index Finger Calculator -->
         <div class="card" id="indexFinger">
